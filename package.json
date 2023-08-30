@@ -1,0 +1,33 @@
+{
+  "name": "express-web",
+  "version": "1.0.0",
+  "description": "Learning node web",
+  "main": "index.js",
+  "repository": "https://github.com/acidSnkj/express-web",
+  "author": "Jorge Rivera",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node index.js",
+    "dev": "DEBUG=app nodemon app.js",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "1.10.0"
+  },
+  "devDependencies": {
+    "chalk": "4.1.1",
+    "debug": "4.3.1",
+    "eslint": "^8.48.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "delay": 2500,
+    "env": {
+      "PORT": "3000"
+    }
+  }
+}
